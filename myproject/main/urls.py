@@ -1,8 +1,9 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='index'),
+    path('', views.IndexView.as_view(), name='home'),
     path('about/', views.about, name='about'),
-    path('create_news/', views.create_news, name='create_news'),
 ]
